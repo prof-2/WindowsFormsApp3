@@ -96,5 +96,10 @@ namespace WindowsFormsApp3
         {
 
         }
+
+        private void tabPage7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

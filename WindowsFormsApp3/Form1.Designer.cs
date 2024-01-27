@@ -111,8 +111,8 @@ namespace WindowsFormsApp3
             this.label6 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
+            this.listBox7 = new System.Windows.Forms.ListBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -912,35 +912,39 @@ namespace WindowsFormsApp3
             // 
             // tabPage7
             // 
-            this.tabPage7.Controls.Add(this.label24);
+            this.tabPage7.Controls.Add(this.listBox7);
             this.tabPage7.Controls.Add(this.label23);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tabPage7.Size = new System.Drawing.Size(768, 400);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "О программе";
             this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(6, 28);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(113, 13);
-            this.label24.TabIndex = 1;
-            this.label24.Text = "Пронин С.Е. - препод";
+            this.tabPage7.Click += new System.EventHandler(this.tabPage7_Click);
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label23.Location = new System.Drawing.Point(6, 12);
+            this.label23.Location = new System.Drawing.Point(6, 14);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(166, 13);
             this.label23.TabIndex = 0;
             this.label23.Text = "Список участиков проекта";
             this.label23.Click += new System.EventHandler(this.label23_Click);
+            // 
+            // listBox7
+            // 
+            this.listBox7.FormattingEnabled = true;
+            this.listBox7.Items.AddRange(new object[] {
+            "Пронин.С.Е - препод",
+            "Нагапетян.П.С о-п-921/2"});
+            this.listBox7.Location = new System.Drawing.Point(9, 30);
+            this.listBox7.Name = "listBox7";
+            this.listBox7.Size = new System.Drawing.Size(260, 329);
+            this.listBox7.TabIndex = 2;
             // 
             // Form1
             // 
@@ -1055,7 +1059,7 @@ namespace WindowsFormsApp3
         private System.Windows.Forms.ComboBox comboBox9;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.ListBox listBox7;
     }
 }
 
