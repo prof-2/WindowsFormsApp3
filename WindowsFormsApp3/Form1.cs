@@ -91,5 +91,10 @@ namespace WindowsFormsApp3
         {
 
         }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
